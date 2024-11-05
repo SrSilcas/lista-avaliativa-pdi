@@ -32,12 +32,12 @@ graphic_information1 = get_colors(correct_area1, 2, True)
 graphic_information2 = get_colors(correct_area2, 2, True)
 graphic_information3 = get_colors(correct_area3, 2, True)
 
-if graphic_information1[0][0] > 40 or graphic_information1[1][0] > 40:
-    print(f"Imagem {path1} possui um instrumento medico")
+if graphic_information1[0][0] < 6 and graphic_information1[1][0] < 6:
+    print(f"Imagem {path1} não possui um instrumento medico")
 
-if graphic_information2[0][0] > 40 or graphic_information2[1][0] > 40:
-    print(f"Imagem {path2} possui um instrumento medico")
+if graphic_information2[0][0] < 6 and graphic_information2[1][0] < 6:
+    print(f"Imagem {path2} não possui um instrumento medico")
 
-if graphic_information3[0][0] > 40 or graphic_information3[1][0] > 40:
-    print(f"Imagem {path3} possui um instrumento medico")
+if graphic_information3[0][0] < 6 and graphic_information3[1][0] < 6:
+    print(f"Imagem {path3} não possui um instrumento medico")
 
